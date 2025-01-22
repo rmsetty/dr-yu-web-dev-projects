@@ -2,40 +2,82 @@
 function main() {
     putBeeper();
     move();
-    turnLeft();
     move();
     putBeeper();
-    turnRight();
     move();
+    move();
+    putBeeper();  
     turnLeft();
-    move();
-    putBeeper();
-    turnRight();
-    move();
-    turnLeft();
-    move();
-    putBeeper();
-    turnRight();
     move();
     turnLeft();
     move();
     putBeeper();
+    move();
+    move();
+    putBeeper();
+    move();
     turnRight();
+    move();
+    turnRight();
+    putBeeper();
+    move();
+    move();
+    putBeeper();
+    move();
+    move();
+    putBeeper();  
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    putBeeper();
+    move();
+    move();
+    putBeeper();
+    move();
 }
+
 */
 
 function main(){
-    putBeeper();
-    diagonalMoveAndBeeper()
-    diagonalMoveAndBeeper()
-    diagonalMoveAndBeeper()
-    diagonalMoveAndBeeper()
-}
-
-function diagonalMoveAndBeeper() {
+    beepersRight();
+    goUpTurnLeft();
+    beepersLeft();
+    goUpTurnRight();
+       beepersRight();
+    goUpTurnLeft();
+    beepersLeft();
+    goUpTurnRight();
+       beepersRight();
+ }
+  
+ function goUpTurnRight() {
+    turnRight();
     move();
+    turnRight();
+ }
+  
+ function goUpTurnLeft() {
     turnLeft();
     move();
+    turnLeft();
+ }
+  
+ function beepersRight() {
     putBeeper();
-    turnRight();
-}
+    move();
+    move();
+    putBeeper();
+    move();
+    move();
+    putBeeper();  
+ }
+  
+ function beepersLeft() {
+    move();
+    putBeeper();
+    move();
+    move();
+    putBeeper();
+    move();
+ }
