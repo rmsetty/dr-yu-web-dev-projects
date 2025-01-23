@@ -1,0 +1,25 @@
+var name = prompt("What is your name?");
+var crushName = prompt("What is your crush's name?");
+
+var loveScore = (Math.floor((Math.random() * 100))) + 1;
+
+if (loveScore === 100) {
+    alert("Your love score is 100%. You love each other like Kanye loves Kanye!");
+} 
+else if (loveScore > 70) {
+    alert("Your love score is " + loveScore + "%. You love each other like Kanye loves Kanye!");
+} 
+else if (loveScore > 30 && loveScore <= 70) {
+    alert("Your love score is " + loveScore + "%. Not bad, but maybe try harder!");
+} 
+else if (loveScore <= 30) {
+    alert("Your love score is " + loveScore + "%. You go together like oil and water!");
+}
+
+if (loveScore < 20 || loveScore > 90) {
+    alert("Your love score is " + loveScore + "%. Either you're totally into each other, or it's not meant to be!");
+}
+
+if (!(loveScore === 50)) {
+    alert("Your love score is " + loveScore + "%. It's not 50, but it's still special!");
+}
