@@ -56,7 +56,7 @@
 //     })
 // });
 
------------------------- VERSION 3 ----------------------------------
+// ------------------------ VERSION 3 ----------------------------------
 document.addEventListener("keydown", function (event) {
     var keyPressed = event.key;
 
