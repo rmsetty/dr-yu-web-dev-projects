@@ -101,16 +101,16 @@ function makeNoise (key)
   switch (key)
   {
     case 'w':
-      playSound('tom1');
+      playSound('tom-1');
       break;
     case 'a':
-      playSound('tom2');
+      playSound('tom-2');
       break;
     case 's':
-      playSound('tom3');
+      playSound('tom-3');
       break;
     case 'd':
-      playSound('tom4');
+      playSound('tom-4');
       break;
     case 'j':
       playSound('snare');
@@ -119,7 +119,7 @@ function makeNoise (key)
       playSound('crash');
       break;
     case 'l':
-      playSound('kick');
+      playSound('kick-bass');
       break;
     default:
       console.log('No sound for this key');
@@ -128,24 +128,24 @@ function makeNoise (key)
 
 function playSound(key)
 {
-  const sound = new Audio(`sounds/${drum}.mp3`);
+  const sound = new Audio(`sounds/${key}.mp3`);
   sound.play();
 }
 
 document.querySelectorAll('.drum').forEach(button => {
   button.addEventListener("click", function () {
     var buttonKey = this.innerHTML.toLowerCase();
-    makeSound(buttonKey);
+    makeNoise(buttonKey);
   });
 });
 
 document.addEventListener("keydown", function () {
   var key = event.key.toLowerCase();
-  makeSound(key);
+  makeNoise(key);
 })
 
-document.addEventListener("click", function () {
-  var key = event.target.innerHTML.toLowerCase();
-  makeSound(key);
-})
+// document.addEventListener("click", function () {
+//   var key = event.target.innerHTML.toLowerCase();
+//   makeSound(key);
+// })
 
