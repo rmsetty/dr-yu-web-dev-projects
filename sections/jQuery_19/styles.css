@@ -11,3 +11,9 @@ body {
 .margin-50 {
     margin: 50px;
 }
+
+.delete{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}

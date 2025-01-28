@@ -139,7 +139,7 @@ document.querySelectorAll('.drum').forEach(button => {
   });
 });
 
-document.addEventListener("keydown", function () {
+document.addEventListener("keydown", function (event) {
   var key = event.key.toLowerCase();
   makeNoise(key);
 })
